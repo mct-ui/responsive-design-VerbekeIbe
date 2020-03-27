@@ -344,6 +344,13 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+.c-logo {
+    height: 32px;
+}
+
+.c-logo__symbol {
+    height: 100%;
+}
 
 /*------------------------------------*\
   #UTILITIES
@@ -475,6 +482,9 @@ a:focus {
 }
 
 @media (min-width: 768px) {
+    .c-logo{
+        height: 40px;
+    }
   .u-1-of-2-bp2 {
     flex-basis: calc(100% / 2) !important;
   }
