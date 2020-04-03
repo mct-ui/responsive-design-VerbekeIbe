@@ -219,6 +219,7 @@ a:focus {
     
     
   }
+
 }
 
 /*
@@ -237,6 +238,11 @@ a:focus {
 .o-list {
   list-style: none;
   padding: 0;
+}
+
+.o-container--gradient{
+  background:         linear-gradient(to bottom, #5051DB 0%,#3887F7 100%);
+  color: #fff;
 }
 
 /*
@@ -382,6 +388,8 @@ a:focus {
         margin-top: 72px;
     }
 }
+
+
 
 
 /*------------------------------------*\
@@ -543,6 +551,20 @@ a:focus {
   color: #3E3EA8;
 }
 
+/* inversed */
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active{
+  color: #fff;
+}
+
+.c-link-cta--inverse::after{
+  background-color: #fff;
+}
+
+.c-link-cta--inverse:hover::after{
+  background-color: #fff;
+}
 
 
 /*------------------------------------*\
