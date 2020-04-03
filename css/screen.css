@@ -414,6 +414,14 @@ a:focus {
   display: block;
 }
 
+@media (min-width: 768px){
+  .c-nav__list {
+    display: flex;
+  }
+  .c-nav__link{
+    padding : 8px 16px;
+  }
+}
 .c-nav__link,
 .c-nav__link:visited,
 .c-nav__link:active {
