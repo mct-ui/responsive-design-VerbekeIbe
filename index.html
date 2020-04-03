@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Flatiron</title>
-        <meta name="description" content="This is my HTML5 boilerplate.">
+        <meta name="description" content="Flatiron">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="msapplication-TileColor" content="#e85e00">
         <meta name="theme-color" content="#e85e00">
@@ -13,10 +13,13 @@
         <link rel="stylesheet" href="css/screen.css">
     </head>
     <body>
-        <header class="o-row">
+        <header class="o-row o-row--md">
+            
             <div class="o-container">
-                <h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 40">
+                <div class="c-header">
+                    <div class="c-header__logo">
+                <h1 class="c-logo">
+                    <svg class="c-logo__symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 40">
                         <title>Flatiron</title>
                         <path fill="#3887f7" d="M15.659,19.25v20l16.929-10v-20Z" transform="translate(1.27 0.75)"/>
                         <path fill="#5051db" d="M16.929,0,0,10V30L16.929,20Z"/>
@@ -24,39 +27,53 @@
                     </svg>
                     
                 </h1>
-                <nav>
-                    <ul>
-                        <li><a href="#!">Technology</a></li>
-                        <li><a href="#!">Company</a></li>
-                        <li><a href="#!">Publications</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul>
-                        <li><a href="#!">Careers</a></li>
-                        <li><a href="#!">Blog</a></li>
+            </div>
+            <div class="c-header__nav">
+            <nav class="c-nav">
+                    <ul class="o-list c-nav__list">
+                        <li class="c-nav__item is-selected"><a href="#!">Technology</a></li>
+                        <li class="c-nav__item"><a href="#!">Company</a></li>
+                        <li class="c-nav__item"><a href="#!">Publications</a></li>
                     </ul>
                 </nav>
             </div>
+            <div class="c-header__nav">
+                <nav class="c-nav c-nav--meta">
+                    <ul class="o-list c-nav__list">
+                        <li class="c-nav__item"><a href="#!" class="c-nav__link--meta">Careers</a></li>
+                        <li class="c-nav__item"><a href="#!" class="c-nav__link--meta">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
         </header>
-        <section class="o-row o-row--lg">
+        <section class="o-row o-row--lg u-pt-clear">
             <div class="o-container">
+                <div class="o-section o-section--lg">
                 <figure>
                     <img src="img/jpg/intro-img.jpg" alt="Dr. James Hamrick & Sarika Vora in their weekly team stand-up">
                 </figure>
-                <h1>
-                    Cancer is smart.
-                    Together, we can
+            </div>
+                <div class="o-section o-section--lg">
+                    <div class="u-max-width-sm o-layout o-layout--gutter-lg">
+                <h1 class="c-lead c-lead--xxl u-color-primary-base">
+                    Cancer is smart. <br>
+                    Together, we can <br>
                     be smarter.
                 </h1>
-                <p>
+            </div>
+            <div class="u-max-width-sm">
+                <p class="c-lead--lg">
                     Accelerating the fight against cancer requires the entire industry to work together. Our products connect community oncologists, academics, hospitals, life science researchers and regulators on a shared technology platform. <br>
                     Together, we can learn from the experience of every patient.
                 </p>
             </div>
+            </div>
+            </div>
         </section>
-        <section class="o-row o-row--lg">
-            <div class="o-container">
+        <section class="o-row o-row--lg  ">
+            <div class="o-container o-row--neutral-x-light">
                 <article>
                     <figure>
                         <picture>
@@ -67,14 +84,18 @@
                         <figcaption>Dr. Jeremy McDuffie, Tennessee Oncology</figcaption>
                     </figure>
                     <header>
-                        <h2>
+                        
+                        <h2 class="c-lead c-lead--xxl">
                             For Community <br>
                             Oncology
                         </h2>
+                    
                     </header>
-                    <p>
+                  
+                    <p class="c-lead c-lead--lg">
                         OncoCloud is the most comprehensive suite of software and services in community oncology. Using our technology, community clinics are providing better care for patients while remaining efficient, independent and financially successful.
                     </p>
+              
                     <p>
                         <a href="#!">Learn more</a>
                     </p>
@@ -89,14 +110,18 @@
                         <figcaption>The lab at New York Cancer & Blood Specialists</figcaption>
                     </figure>
                     <header>
-                        <h2>
+                       
+                        <h2 class="c-lead c-lead--xxl">
                             For Life <br>
                             Sciences
                         </h2>
+                   
                     </header>
-                    <p>
+                    
+                    <p class="c-lead c-lead--lg">
                         With access to billions of data points on millions of cancer patients treated across our network, Flatiron is changing the way life science companies are using real-world data to accelerate research and generate evidence.
                     </p>
+              
                     <p>
                         <a href="#!">Learn more</a>
                     </p>
@@ -111,14 +136,18 @@
                         <figcaption>The lab at New York Cancer & Blood Specialists</figcaption>
                     </figure>
                     <header>
-                        <h2>
+                        
+                        <h2 class="c-lead c-lead--xxl">
                             For Academics <br>
                             &amp; Hospitals
                         </h2>
+                    
                     </header>
-                    <p>
+                   
+                    <p class="c-lead c-lead--lg">
                         Flatiron’s enriched data infrastructure helps hospitals and academic centers unlock the promise of their EHR data. Researchers and clinicians now have access to research-grade insights from within and beyond the walls of their institution.
                     </p>
+                   
                     <p>
                         <a href="#!">Learn more</a>
                     </p>
@@ -128,10 +157,11 @@
         <section class="o-row o-row--lg">
             <div class="o-container">
                 <header>
-                    <h2>
+                    <h2 class="c-lead c-lead--xl u-color-primary-base">
                         Do well by doing good. Join the leading tech company in the fight against cancer.
                     </h2>
                 </header>
+                <ul class="o-list c-nav__list">
                 <p>
                     <a href="#!">Our story</a>
                 </p>
@@ -141,6 +171,7 @@
                 <p>
                     <a href="#!">Join our team</a>
                 </p>
+            </ul>
             </div>
             <div class="o-container">
                 <figure>
@@ -148,14 +179,14 @@
                 </figure>
             </div>
             <div class="o-container">
-                <h3>
+                <h3 class="c-lead c-lead-xxl">
                     Life at Flatiron
                 </h3>
 
-                <p>
+                <p class="c-lead c-lead--lg">
                     The talent and dedication of the people working at Flatiron makes everything we do possible. If you’re passionate about having an impact on accelerating cancer research and improving patient care, we’d love to hear from you.
                 </p>
-                <p>
+                <p class="c-lead">
                     <a href="#!">Open positions</a>
                 </p>
             </div>
@@ -163,10 +194,10 @@
         <section class="o-row o-row--lg">
             <div class="o-container">
                 <div class="u-max-width-xs">
-                    <h2>
+                    <h2 class="c-lead c-lead--xxl">
                         Let us tell you more.
                     </h2>
-                    <p>
+                    <p class="c-lead c-lead--lg">
                         We will email you to start the conversation. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                     <p>
@@ -177,7 +208,7 @@
         </section>
         <footer class="o-row">
             <div class="o-container">
-                <p>
+                <p class="c-lead c-lead--lg">
                     Flatiron
                 </p>
                 <nav>
