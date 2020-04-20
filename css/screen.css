@@ -195,11 +195,7 @@ a:focus {
   padding: 48px 24px 24px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 20px;
-    line-height: 1.6;
-  }
+@media (min-width: 768px){
   .o-row {
     padding-left: 48px;
     padding-right: 48px;
@@ -220,6 +216,13 @@ a:focus {
     
   }
 
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
 
 /*
@@ -254,15 +257,12 @@ a:focus {
 */
 
 .o-layout {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
 }
 
 .o-layout__item {
   flex-basis: 100%;
-  flex-direction: row-reverse;
 }
 
 /* gutter modifiers, these affect o-layout__item too */
@@ -402,9 +402,17 @@ a:focus {
 .c-logo__symbol {
   height: 100%;
 }
+@media (min-width: 768px) {
+  .c-logo {
+      height: 40px;
+  }
+}
 .c-nav {
   font-size: 18px;
   line-height: 24px;
+}
+.c-nav--meta{
+  font-size: 16px;
 }
 
 .c-nav__link {
@@ -417,6 +425,9 @@ a:focus {
 @media (min-width: 768px){
   .c-nav__list {
     display: flex;
+    margin-left: -16px;
+    margin-right: -16px;
+    
   }
   .c-nav__link{
     padding : 8px 16px;
@@ -439,6 +450,22 @@ a:focus {
 }
 .c-header__nav {
   display: none;
+}
+.c-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .c-header__logo,
+  .c-header__nav{
+    flex-grow: 1;
+    flex-basis: 50%
+  }
+  .c-header__nav{
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .c-lead {
@@ -783,9 +810,6 @@ a:focus {
     padding: 8px 16px;
     flex-basis: 100%;
   }
-  .c-logo {
-    height: 40px;
-  }
   .u-1-of-2-bp2 {
     flex-basis: calc(100% / 2) !important;
   }
@@ -822,12 +846,6 @@ a:focus {
 }
 
 @media (min-width: 992px) {
-  .c-header {
-  }
-
-  .c-header__nav {
-    display: block;
-  }
   .u-1-of-2-bp3 {
     flex-basis: calc(100% / 2) !important;
   }
